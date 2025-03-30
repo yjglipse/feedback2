@@ -31,18 +31,19 @@ export function App() {
              to help us improve our offering!</p>
              <div className="flex justify-between mb-6">
              <input type="button" value={1} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
-              focus:text-white" onClick={() => handleChangeRateNote(1)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
              <input type="button" value={2} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
-              focus:text-white" onClick={() => handleChangeRateNote(2)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
              <input type="button" value={3} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
-              focus:text-white" onClick={() => handleChangeRateNote(3)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
              <input type="button" value={4} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
-              focus:text-white" onClick={() => handleChangeRateNote(4)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
              <input type="button" value={5} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray 
-              focus:text-white" onClick={() => handleChangeRateNote(5)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
            </div>
  
-           <button className="bg-orange w-full py-3 rounded-3xl uppercase font-bold tracking-1" onClick={handleSubmit}>Submit</button>
+           <button className="bg-orange w-full py-3 rounded-3xl uppercase font-bold tracking-1 hover:bg-white hover:text-orange cursor-pointer
+           transition duration-400" onClick={handleSubmit}>Submit</button>
          </div>
        ) : (
           <div className="bg-radial-gradient max-w-103 px-6 pt-6 pb-8 rounded-2xl font-overpass text-center">
