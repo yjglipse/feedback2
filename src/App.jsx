@@ -1,25 +1,53 @@
 import iconStar from "./assets/icon-star.svg"
+import { useState } from "react"
  
 export function App() {
+  const[submited, setSubmited] = useState(false) // = const submited = false
+   const[rateNote, setRateNote] = useState(0)
+ 
+   function handleSubmit() {
+     if(rateNote !== 0) {
+       setSubmited(!submited)
+       return
+     }
+ 
+     alert("Please, choose a rate button!")
+   }
+ 
+   function handleChangeRateNote(value) {
+     setRateNote(value)
+ 
+   }
   return(
     <div className="h-svh bg-very-dark-blue text-white flex justify-center items-center px-6">
-      <div className="bg-radial-gradient max-w-103">
-        <img src={iconStar} alt="icone estrela" />
+      {submited ===  false ? (
+         <div className="bg-radial-gradient max-w-103 px-6 pt-6 pb-8 rounded-2xl font-overpass">
+         
+           <div className="bg-dark-blue p-4 w-fit rounded-full mb-4">
+             <img src={iconStar} alt="icone estrela" />
+           </div>
  
-        <h1>How did we do?</h1>
-        <p>Please let us know how we did with your support request. All feedback is appreciated 
-           to help us improve our offering!</p>
+           <h1 className="font-bold text-2xl mb-2.5">How did we do?</h1>
+           <p className="text-light-gray text-sm leading-1 mb-6">Please let us know how we did with your support request. All feedback is appreciated 
+             to help us improve our offering!</p>
+             <div className="flex justify-between mb-6">
+             <input type="button" value={1} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
+              focus:text-white" onClick={() => handleChangeRateNote(1)}/>
+             <input type="button" value={2} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
+              focus:text-white" onClick={() => handleChangeRateNote(2)}/>
+             <input type="button" value={3} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
+              focus:text-white" onClick={() => handleChangeRateNote(3)}/>
+             <input type="button" value={4} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
+              focus:text-white" onClick={() => handleChangeRateNote(4)}/>
+             <input type="button" value={5} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray 
+              focus:text-white" onClick={() => handleChangeRateNote(5)}/>
+           </div>
  
-        <div>
-          <input type="button" value={1} />
-          <input type="button" value={2} />
-          <input type="button" value={3} />
-          <input type="button" value={4} />
-          <input type="button" value={5} />
-        </div>
- 
-        <button>Submit</button>
-      </div>
+           <button className="bg-orange w-full py-3 rounded-3xl uppercase font-bold tracking-1" onClick={handleSubmit}>Submit</button>
+         </div>
+       ) : (
+         <p>Outro código</p>
+       )}
     </div>
   )
 }
