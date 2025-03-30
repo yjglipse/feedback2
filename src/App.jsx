@@ -33,13 +33,13 @@ export function App() {
              <input type="button" value={1} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
               focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
              <input type="button" value={2} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
-              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(2)}/>
              <input type="button" value={3} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
-              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(3)}/>
              <input type="button" value={4} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray
-              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(4)}/>
              <input type="button" value={5} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-gray 
-              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(1)}/>
+              focus:text-white hover:bg-orange hover:text-white cursor-pointer sm:w-13 sm:h-13 transition duration-400" onClick={() => handleChangeRateNote(5)}/>
            </div>
  
            <button className="bg-orange w-full py-3 rounded-3xl uppercase font-bold tracking-1 hover:bg-white hover:text-orange cursor-pointer
