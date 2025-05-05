@@ -6,21 +6,9 @@ export function App() {
   const[submited, setSubmited] = useState(false) // = const submited = false
    const[rateNote, setRateNote] = useState(0)
  
-   function handleSubmit() {
-     if(rateNote !== 0) {
-       setSubmited(!submited)
-       return
-     }
- 
-     alert("Please, choose a rate button!")
-   }
- 
-   function handleChangeRateNote(value) {
-     setRateNote(value)
-   }
   return(
       submited ===  false ? (
-        <CardInicial handleChangeRateNote={handleChangeRateNote} handleSubmit={handleSubmit}/>
+        <CardInicial setRateNote={setRateNote} setSubmited={setSubmited} rateNote ={rateNote}/>
        ) : (
         <CardFinal rateNote={rateNote}/>
        )
